@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija Dish</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Registration Form</h1>
+        <div class="input-container">
+            <input type="text" id="phone" name="phone" placeholder="Phone"><br>
+            <input type="password" id="password" name="password" placeholder="Name"><br>
+
+            <label for="food" style="color: white;">Choose Food</label>
+            <select id="food">
+                <option value="">-- Select Food --</option>
+                <option value="Jollof Rice">Jollof Rice</option>
+                <option value="Eba">Eba</option>
+                <option value="Pounded Yam">Pounded Yam</option>
+            </select>
+
+            <label for="drink" style="color: white;">Choose Drink</label>
+            <select id="drink">
+                <option value="">-- Select Drink --</option>
+                <option value="Fanta">Fanta</option>
+                <option value="Coke">Coke</option>
+                <option value="sprite">sprite</option>
+            </select>
+
+            <button onclick="showSelection()">Submit</button>
+
+            <p id="result" style="color: white;"></p>
+        </div>
+    </div>
+
+    <script>
+        function showSelection() {
+            let food = document.getElementById("food").value;
+            let drink = document.getElementById("drink").value;
+            let message = "You chose: ";
+
+            if (food) {
+                message += food + " (Food)";
+            }
+            if (drink) {
+                message += (food ? " and " : "") + drink + " (Drink)";
+            }
+
+            alert(message || "Please select food and drink.");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <title>FoodHUB</title>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">food<span>HUB</span></div>
+        <input type="text" placeholder="Search products, brands and categories..." class="search-bar">
+        <button class="search-button">Search</button>
+        <button class="view-cart" onclick="viewCart()">View Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section class="flash-sale">
+        <h2>⚡ Flash Sale</h2>
+        <p class="timer">Time Left: 19:54:05</p>
+
+        <div class="product-grid">
+            <div class="product-card" data-name="Eba" data-price="1200">
+                <img src="images/eba.jpg" alt="Eba">
+                <div class="discount-tag">-40%</div>
+                <h3>Eba</h3>
+                <p class="price">₦1,200 
+                <p class="stock">30 items left</p>
+                <button class="add-to-cart">buy now</button>
+            </div>
+            <div class="product-card" data-name="Jollof Rice" data-price="1800">
+                <img src="images/jollor rice.webp" alt="Jollof Rice">
+                <div class="discount-tag">-34%</div>
+                <h3>Jollof Rice</h3>
+                <p class="price">₦1,800 <span class="old-price">₦2,500</span></p>
+                <p class="stock">45 items left</p>
+                <button class="add-to-cart">buy now</button>
+            </div>
+            <div class="product-card" data-name="Pounded Yam" data-price="2000">
+                <img src="images/pounded yam.jpg" alt="Pounded Yam">
+                <div class="discount-tag">-20%</div>
+                <h3>Pounded Yam</h3>
+                <p class="price">₦2,000 <span class="old-price">₦2,500</span></p>
+                <p class="stock">20 items left</p>
+                <button class="add-to-cart">buy now</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

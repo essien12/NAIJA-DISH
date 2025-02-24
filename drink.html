@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drink.css">
+    <title>drink Shop</title>
+   
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">drink<span>shop</span></div>
+        <input type="text" placeholder="Search products, brands and categories..." class="search-bar">
+        <button class="search-button">Search</button>
+        <button class="view-cart">View Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section class="flash-sale">
+        <h2>⚡ Flash Sale</h2>
+        <p class="timer">Time Left: <span id="countdown">19:54:05</span></p>
+
+        <div class="product-grid">
+            <div class="product-card" data-name="Coke" data-price="1200">
+                <img src="images/coke.jpg" alt="Coke">
+                <div class="discount-tag">-40%</div>
+                <h3>coke</h3>
+                <p class="price">₦1,200 <span class="old-price">₦2,000</span></p>
+                <p class="stock">30 items left</p>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                <button class="add-to-cart">buy now</button>
+            </div>
+
+            <div class="product-card" data-name="Sprite" data-price="1800">
+                <img src="images/spirte.jpg" alt="Sprite">
+                <div class="discount-tag">-34%</div>
+                <h3>spirite</h3>
+                <p class="price">₦1,800 <span class="old-price">₦2,500</span></p>
+                <p class="stock">45 items left</p>
+                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                <button class="add-to-cart">buy now</button>
+            </div>
+
+            <div class="product-card" data-name="Fanta" data-price="2000">
+                <img src="images/fanta.jpg" alt="Fanta">
+                <div class="discount-tag">-20%</div>
+                <h3>fanta</h3>
+                <p class="price">₦2,000 <span class="old-price">₦2,500</span></p>
+                <p class="stock">20 items left</p>
+                <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                <button class="add-to-cart">buy now</button>
+            </div>
+        </div>
+    </section>
+    <script src="cart.js" defer></script>
+</body>
+</html>
+
